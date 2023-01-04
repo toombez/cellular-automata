@@ -1,4 +1,6 @@
 {
+  "name": "@cellular-automata/web",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
