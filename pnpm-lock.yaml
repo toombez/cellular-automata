@@ -18,6 +18,14 @@ importers:
     devDependencies:
       nuxt: 3.0.0
 
+  packages/base-ca:
+    specifiers:
+      '@cellular-automata/tsconfig': workspace:*
+      typescript: ^4.7.4
+    dependencies:
+      '@cellular-automata/tsconfig': link:../tsconfig
+      typescript: 4.9.4
+
   packages/eslint-config-custom:
     specifiers:
       eslint: ^7.23.0
@@ -4664,7 +4672,6 @@ packages:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /ufo/0.8.6:
     resolution: {integrity: sha512-fk6CmUgwKCfX79EzcDQQpSCMxrHstvbLswFChHS0Vump+kFkw7nJBfTZoC1j0bOGoY9I7R3n2DGek5ajbcYnOw==}
